@@ -1,6 +1,6 @@
 export default function Landing(){
   return (
-    <div className="bg-primary text-secondary">
+    <div className="bg-primary text-secondary px-16">
       <h1>Hello, I am Matthew</h1>
       <p>
         Welcome to <strong>MENTAL DEV TECH!</strong>, I’m dedicated to creating
