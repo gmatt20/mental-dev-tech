@@ -10,12 +10,12 @@ export default {
     extend: {
       colors: {
         primary: "#db4d4d",
-        dark: "#31353f",
-        darker: "#21262d",
+        dark: "#161b22",
+        darker: "#0d1117",
         light: "#d7d8d8",
         hover: "#454852",
         active: "#5a5d65",
-        text: "#f4f5f4",
+        text: "#ecf2f8",
       },
     },
   },
