@@ -9,11 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#254336;",
-        secondary: "#f5efe6",
-        hover: "#b6c5be",
-        active: "#657e72",
-        text: "#f5efe6",
+        primary: "#db4d4d",
+        dark: "#31353f",
+        light: "#d7d8d8",
+        hover: "#454852",
+        active: "#5a5d65",
+        text: "#f4f5f4",
       },
     },
   },

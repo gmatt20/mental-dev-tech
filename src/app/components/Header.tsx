@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center mx-16 my-5">
       <div className={gugi.className}>
-        <h1 className="text-4xl text-left hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in  rounded-md active:bg-active px-3 py-2">
+        <h1 className="text-4xl text-left hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in  rounded-md active:bg-active px-3 py-2 text-primary">
           MENTAL DEV TECH
         </h1>
       </div>
