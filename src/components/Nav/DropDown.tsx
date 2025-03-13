@@ -34,16 +34,16 @@ export default function DropDown() {
         MENTAL DEV TECH
       </h1>
       {open ? (
-        <div className="bg-slate-700 absolute top-0 right-0 h-screen py-10 px-5 text-3xl ">
+        <div className="bg-darker absolute top-0 right-0 h-screen py-10 px-5 text-3xl ">
           <X
             size={40}
             onClick={handleOpen}
-            className="absolute right-1 top-1 cursor-pointer"
+            className="absolute right-5 top-5 cursor-pointer"
           />
           <ul>
             {listItems.map((item) => (
               <li
-                className="text-center mb-5 hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active"
+                className="text-center my-5 py-2 px-3 hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active"
                 key={item.id}>
                 {item.item}
               </li>

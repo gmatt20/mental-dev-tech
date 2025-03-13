@@ -11,6 +11,7 @@ export default {
       colors: {
         primary: "#db4d4d",
         dark: "#31353f",
+        darker: "#21262d",
         light: "#d7d8d8",
         hover: "#454852",
         active: "#5a5d65",
