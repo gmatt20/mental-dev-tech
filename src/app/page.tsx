@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Nav from "../components/Nav";
 import Landing from "../components/Landing";
 import About from "../components/About";
 import Skills from "../components/Skills";
@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Nav />
       <Landing />
       {/* <About />
       <Skills />
