@@ -21,8 +21,8 @@ const gugi = Gugi({
 
 const Nav: React.FC = () => {
   return (
-    <nav className="w-screen">
-      <ul className="flex gap-6 flex-rowx items-center justify-center">
+    <nav className="w-screen px-8 py-5">
+      <ul className="hidden gap-6 flex-rowx items-center justify-center md:flex">
         {listItems.map((item) => (
           <li
             className={` ${
@@ -35,6 +35,13 @@ const Nav: React.FC = () => {
           </li>
         ))}
       </ul>
+      <div className="md:hidden flex gap-6 flex-rowx items-center justify-center">
+        <h1
+          className={`text-center text-4xl hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in  rounded-md active:bg-active px-3 py-2 text-primary ${gugi.className} tracking-widest`}>
+          MENTAL DEV TECH
+        </h1>
+        <div></div>
+      </div>
     </nav>
   );
 };

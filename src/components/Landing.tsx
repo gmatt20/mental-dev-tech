@@ -18,19 +18,20 @@ const courierPrime = Courier_Prime({
 
 export default function Landing() {
   return (
-    <div className="w-screen flex flex-col items-center">
-      <Image src={computer} width={500} height={500} alt="Mr. Iby" />
-      <TypeAnimation
-        sequence={["FRONTEND DEVELOPER"]}
-        wrapper="span"
-        className={`${courierPrime.className} text-5xl text-primary`}
-      />
-      <p className="text-center">
-        Hi, I’m Matthew, a passionate software developer specializing in
-        frontend web development. With over a year of experience, I create
-        beautiful, user-friendly, and responsive websites. I focus on building
-        high-quality front-end experiences that help bring ideas to life.
-      </p>
+    <div className="w-screen flex flex-col md:flex-row-reverse items-center px-8 py-5 ">
+      <Image src={computer} width={400} height={400} alt="Mr. Iby" />
+      <div>
+        <TypeAnimation
+          sequence={["FRONTEND DEVELOPER"]}
+          wrapper="span"
+          className={`${courierPrime.className} text-6xl text-primary text-center`}
+        />
+        <p className="text-left text-2xl">
+          Hi, I’m Matthew, a passionate software developer specializing in
+          frontend web development. With over a year of experience, I create
+          beautiful, user-friendly, and responsive websites.
+        </p>
+      </div>
     </div>
   );
 }
