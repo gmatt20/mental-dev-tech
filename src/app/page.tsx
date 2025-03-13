@@ -1,4 +1,4 @@
-import Nav from "../components/Nav";
+import Nav from "../components/Nav/Nav";
 import Landing from "../components/Landing";
 import About from "../components/About";
 import Skills from "../components/Skills";
