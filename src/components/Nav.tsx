@@ -27,7 +27,7 @@ const Nav: React.FC = () => {
           <li
             className={` ${
               item.id === 3
-                ? `text-center text-4xl hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in  rounded-md active:bg-active px-3 py-2 text-primary ${gugi.className}`
+                ? `text-center text-4xl hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in  rounded-md active:bg-active px-3 py-2 text-primary ${gugi.className} tracking-widest`
                 : "text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in px-3 py-2 rounded-md active:bg-active"
             }`}
             key={item.id}>
