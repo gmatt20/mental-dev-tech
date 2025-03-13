@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Gugi } from "next/font/google";
 
 const gugi = Gugi({
@@ -20,6 +20,13 @@ export default function DropDown() {
     }
   };
 
+  const listItems = [
+    { item: "About", id: 1 },
+    { item: "Projects", id: 2 },
+    { item: "Experience", id: 3 },
+    { item: "Blog", id: 4 },
+  ];
+
   return (
     <div className="md:hidden flex gap-6 flex-rowx items-center justify-between">
       <h1
@@ -27,10 +34,25 @@ export default function DropDown() {
         MENTAL DEV TECH
       </h1>
       {open ? (
-        <div>
-          <h1>hi</h1>
+        <div className="bg-slate-700 absolute top-0 right-0 h-screen py-10 px-5 text-3xl ">
+          <X
+            size={40}
+            onClick={handleOpen}
+            className="absolute right-1 top-1 cursor-pointer"
+          />
+          <ul>
+            {listItems.map((item) => (
+              <li
+                className="text-center mb-5 hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active"
+                key={item.id}>
+                {item.item}
+              </li>
+            ))}
+          </ul>
         </div>
-    ) : <Menu onClick={handleOpen} size={40} />}
+      ) : (
+        <Menu onClick={handleOpen} size={40} className="cursor-pointer" />
+      )}
     </div>
   );
 }

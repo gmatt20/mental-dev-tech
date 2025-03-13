@@ -20,7 +20,7 @@ const gugi = Gugi({
 
 const NavItems: React.FC = () => {
   return (
-    <ul className="hidden gap-6 flex-rowx items-center justify-center md:flex">
+    <ul className="hidden gap-6 flex-row items-center justify-center md:flex">
       {listItems.map((item) => (
         <li
           className={` ${

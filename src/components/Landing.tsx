@@ -18,7 +18,7 @@ const courierPrime = Courier_Prime({
 
 export default function Landing() {
   return (
-    <div className="w-screen flex flex-col md:flex-row-reverse items-center px-8 py-5 ">
+    <div className="w-screen flex flex-col md:flex-row-reverse items-center px-8 py-20 ">
       <Image src={computer} width={400} height={400} alt="Mr. Iby" />
       <div>
         <TypeAnimation
