@@ -3,7 +3,8 @@ import UCR from "@/public/ucr-and-bell-tower.webp";
 
 export default function About(){
   return (
-    <div className="w-screen px-8 text-left text-2xl leading-10">
+    <div className="w-screen px-8 text-left text-lg leading-10">
+      <h1 className="text-3xl mb-5 text-center">About Me</h1>
       <p>
         My journey into software development began while studying psychology at
         the University of California, Riverside. During my exploration of
