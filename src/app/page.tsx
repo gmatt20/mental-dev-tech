@@ -2,7 +2,6 @@ import Nav from "../components/Nav/Nav";
 import Landing from "../components/Landing/Landing";
 import Tech from "@/components/Tech/Tech";
 import About from "../components/About/About";
-import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
@@ -23,7 +22,7 @@ export default function Home() {
       </div>
       <Tech />
       <About />
-      {/* <Skills />
+      {/*
       <Projects />
       <Experience />
       <Contact />
