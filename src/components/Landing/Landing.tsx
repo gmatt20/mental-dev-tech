@@ -28,16 +28,25 @@ export default function Landing() {
         />
 
         {/* <Image src={computer} width={400} height={400} alt="Mr. Iby" /> */}
-        <div className="absolute -z-0 flex items-center justify-center top-48 left-0 right-0">
+        <div className="absolute -z-0 flex flex-col items-center justify-center top-48 left-0 right-0 max-md:top-40">
           <TypeAnimation
-            sequence={["FRONTEND DEVELOPER"]}
+            sequence={[800, "FRONTEND DEVELOPER"]}
             wrapper="span"
             className={`${courierPrime.className} text-6xl text-primary text-center`}
+            speed={60}
+            cursor={false}
+          />
+          <TypeAnimation
+            sequence={[1500, "Los Angeles, California"]}
+            wrapper="span"
+            className={`${courierPrime.className} text-2xl text-white text-center`}
+            speed={40}
+            cursor={false}
           />
         </div>
       </div>
-      <div className="mt-72 -z-10">
-        <p className="text-left text-2xl leading-10">
+      <div className="mt-80 -z-10 mx-5 lg:mx-20">
+        <p className="text-left text-2xl leading-10 bg-darker p-8 rounded-lg">
           Hi, I’m Matthew, a passionate software developer based in Los Angeles,
           California. I specialize in frontend web development. With over a year
           of experience, I create beautiful, user-friendly, and responsive
