@@ -2,10 +2,14 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Gugi } from "next/font/google";
+import { Gugi, Syne } from "next/font/google";
 
 const gugi = Gugi({
   weight: "400",
+  subsets: ["sans"],
+});
+const syne = Syne({
+  weight: "800",
   subsets: ["sans"],
 });
 
@@ -30,7 +34,7 @@ export default function DropDown() {
   return (
     <div className="md:hidden flex gap-6 flex-rowx items-center justify-between">
       <h1
-        className={`text-left text-4xl hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active text-primary ${gugi.className} tracking-widest`}>
+        className={`text-left text-4xl hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active text-primary ${syne.className} tracking-widest`}>
         MENTAL DEV TECH
       </h1>
       {open ? (

@@ -1,4 +1,4 @@
-import { Gugi } from "next/font/google";
+import { Gugi, Syne } from "next/font/google";
 
 interface List {
   item: string;
@@ -17,6 +17,10 @@ const gugi = Gugi({
   weight: "400",
   subsets: ["sans"],
 });
+const syne = Syne({
+  weight: "800",
+  subsets: ["sans"],
+});
 
 const NavItems: React.FC = () => {
   return (
@@ -25,7 +29,7 @@ const NavItems: React.FC = () => {
         <li
           className={` ${
             item.id === 3
-              ? `text-center text-4xl hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in  rounded-md active:bg-active  text-primary ${gugi.className} tracking-widest`
+              ? `text-center text-4xl hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in  rounded-md active:bg-active  text-primary ${syne.className} tracking-widest`
               : "text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active"
           }`}
           key={item.id}>
