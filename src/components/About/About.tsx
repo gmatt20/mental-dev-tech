@@ -1,11 +1,17 @@
 import Image from "next/image";
 import UCR from "@/public/ucr-and-bell-tower.webp";
 import SanFrancisco from "@/public/san-francisco.webp";
+import { Syne } from "next/font/google";
+
+const syne = Syne({
+  weight: "800",
+  subsets: ["sans"],
+});
 
 export default function About() {
   return (
     <div className="w-screen px-8 text-left text-lg leading-10 flex flex-col items-center">
-      <h1 className="text-3xl mb-5 text-center">About Me</h1>
+      <h1 className={`${syne.className} text-5xl mb-5 text-center`}>ABOUT ME</h1>
       <div className="flex flex-col items-center md:flex-row gap-5">
         <p className="md:w-[70%]">
           My journey into software development began while studying psychology
