@@ -3,7 +3,7 @@ import NavItems from "@/components/Nav/NavItems";
 
 const Nav: React.FC = () => {
   return (
-    <nav className="w-screen px-8 py-5 fixed bg-darker">
+    <nav className="w-screen px-8 py-5 fixed bg-darker z-10">
       <NavItems />
       <DropDown />
     </nav>

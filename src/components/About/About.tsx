@@ -1,3 +1,6 @@
+import Image from "next/image";
+import UCR from "@/public/ucr-and-bell-tower.webp";
+
 export default function About(){
   return (
     <div className="w-screen px-8 text-left text-2xl leading-10">
@@ -9,6 +12,13 @@ export default function About(){
         instantly fascinated me, but at the time, my focus was on becoming a
         psychologist.
       </p>
+      <Image
+        src={UCR}
+        alt="picture of UC Riverside"
+        className="rounded-lg mx-0 my-10"
+        width={500}
+        height={500}
+      />
       <p>
         Despite not pursuing additional CS courses initially, I developed a
         passion for programming and began teaching myself HTML, CSS, and
