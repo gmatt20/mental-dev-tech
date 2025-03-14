@@ -26,7 +26,7 @@ export default function Landing() {
           wrapper="span"
           className={`${courierPrime.className} text-6xl text-primary text-center`}
         />
-        <p className="text-left text-2xl">
+        <p className="text-left text-2xl leading-10">
           Hi, I’m Matthew, a passionate software developer based in Los Angeles,
           California. I specialize in frontend web development. With over a year
           of experience, I create beautiful, user-friendly, and responsive

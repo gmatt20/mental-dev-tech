@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const roboto = Roboto({
-  weight: "500",
+  weight: ["400"],
   subsets: ["sans"],
 });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-dark text-text">
+      <body className="bg-dark text-text ">
         <div className={roboto.className}>{children}</div>
       </body>
     </html>
