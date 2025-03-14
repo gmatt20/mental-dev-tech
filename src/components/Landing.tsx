@@ -18,7 +18,7 @@ const courierPrime = Courier_Prime({
 
 export default function Landing() {
   return (
-    <div className="w-screen flex flex-col md:flex-row-reverse items-center px-8 py-20 ">
+    <div className="w-screen flex flex-col lg:flex-row-reverse items-center px-8 py-20 ">
       <Image src={computer} width={400} height={400} alt="Mr. Iby" />
       <div>
         <TypeAnimation
@@ -27,9 +27,10 @@ export default function Landing() {
           className={`${courierPrime.className} text-6xl text-primary text-center`}
         />
         <p className="text-left text-2xl">
-          Hi, I’m Matthew, a passionate software developer specializing in
-          frontend web development. With over a year of experience, I create
-          beautiful, user-friendly, and responsive websites.
+          Hi, I’m Matthew, a passionate software developer based in Los Angeles,
+          California. I specialize in frontend web development. With over a year
+          of experience, I create beautiful, user-friendly, and responsive
+          websites.
         </p>
       </div>
     </div>
