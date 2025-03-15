@@ -22,7 +22,7 @@ import { motion } from "motion/react";
 
 export default function Tech() {
   return (
-    <div className="flex items-center justify-center mb-10 bg-darker p-14 overflow-hidden overflow-x-hidden w-screen">
+    <div className="-mx-10 flex items-center justify-center mb-10 bg-darker p-14 overflow-hidden overflow-x-hidden">
       {" "}
       <TooltipProvider delayDuration={100} skipDelayDuration={0}>
         <Slider

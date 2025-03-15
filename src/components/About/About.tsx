@@ -10,8 +10,10 @@ const syne = Syne({
 
 export default function About() {
   return (
-    <div className="w-screen px-8 text-left text-lg leading-10 flex flex-col items-center">
-      <h1 className={`${syne.className} text-5xl mb-5 text-center`}>ABOUT ME</h1>
+    <div className="w-fit  text-left text-lg leading-10 flex flex-col items-center">
+      <h1 className={`${syne.className} text-5xl mb-5 text-center`}>
+        ABOUT ME
+      </h1>
       <div className="flex flex-col items-center md:flex-row gap-5">
         <p className="md:w-[70%]">
           My journey into software development began while studying psychology
@@ -21,7 +23,7 @@ export default function About() {
           coding instantly fascinated me, but at the time, my focus was on
           becoming a psychologist.
         </p>
-        <div className="mb-10 w-[100%] md:w-[50%] flex flex-col items-center bg-darker mt-10 p-10 rounded-lg">
+        <div className="mb-10 w-[80%] max-md:w-[30%] md:w-[50%] flex flex-col items-center bg-darker mt-10 p-10 rounded-lg">
           <Image
             src={UCR}
             alt="picture of UC Riverside"
@@ -47,7 +49,7 @@ export default function About() {
           documentation, and YouTube tutorials. That summer, I realized my true
           passion was in software engineering.
         </p>
-        <div className="mb-10 w-[100%] md:w-[50%] flex flex-col items-center bg-darker mt-10 p-10 rounded-lg">
+        <div className="mb-10 w-[80%] max-md:w-[30%] md:w-[50%] flex flex-col items-center bg-darker mt-10 p-10 rounded-lg">
           <Image
             src={SanFrancisco}
             alt="picture of UC Riverside"

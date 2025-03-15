@@ -20,9 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-dark text-text mx-8 w-screen">
+      <body className="bg-dark text-text">
         <Nav />
-        <div className={roboto.className}>{children}</div>
+        <div className={`${roboto.className} mx-10`}>{children}</div>
       </body>
     </html>
   );
