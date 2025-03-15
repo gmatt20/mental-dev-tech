@@ -42,22 +42,25 @@ export default function TechStack() {
   ];
 
   return (
-    <div className="my-10">
-      <h1 className={`${syne.className} text-5xl mb-5 text-center`}>
-        MY TECH STACK
-      </h1>
-      {techCategories.map((category, id) => (
-        <div key={id}>
-          <div className="bg-darker flex flex-col items-center py-10 rounded-lg my-5">
-            <h1 className={`${syne.className} text-5xl mb-5 text-center`}>
-              {category.title}
-            </h1>
-            <div className="grid grid-cols-3 gap-5 place-items-center text-center">
-              {renderTechStack(category.data)}
+    <div className="my-10 flex flex-col justify-center items-center">
+      <div>
+        <h1 className={`${syne.className} text-5xl mb-10 text-center`}>
+          MY TECH STACK
+        </h1>
+        {techCategories.map((category, id) => (
+          <div key={id}>
+            <div className="bg-darker flex flex-col items-center py-10 rounded-lg my-5 w-[80%] mx-auto">
+              <h1
+                className={`${syne.className} max-md:text-xl text-3xl text-pretty mb-5 text-center`}>
+                {category.title}
+              </h1>
+              <div className="grid grid-flow-col max-md:grid-rows-2 gap-5 place-items-center text-center">
+                {renderTechStack(category.data)}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
