@@ -2,6 +2,7 @@ import Image from "next/image";
 import UCR from "@/public/ucr-and-bell-tower.webp";
 import SanFrancisco from "@/public/san-francisco.webp";
 import { Syne } from "next/font/google";
+import Link from "next/link";
 
 const syne = Syne({
   weight: "800",
@@ -17,11 +18,19 @@ export default function About() {
       <div className="flex flex-col items-center md:flex-row gap-5">
         <p className="md:w-[70%]">
           My journey into software development began while studying psychology
-          at the University of California, Riverside. During my exploration of
-          different subjects, I took my first formal computer science course,
-          where I learned C++ programming. The creativity and logic behind
-          coding instantly fascinated me, but at the time, my focus was on
-          becoming a psychologist.
+          at the{" "}
+          <Link
+            href="https://www.ucr.edu/"
+            rel="noopener noreferrer"
+            target="_blank">
+            <p className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
+              University of California, Riverside
+            </p>
+          </Link>
+          . During my exploration of different subjects, I took my first formal
+          computer science course, where I learned C++ programming. The
+          creativity and logic behind coding instantly fascinated me, but at the
+          time, my focus was on becoming a psychologist.
         </p>
         <div className="mb-10 w-[80%] md:w-[50%] flex flex-col items-center bg-darker mt-10 p-10 rounded-lg">
           <Image
@@ -65,29 +74,52 @@ export default function About() {
         </div>
       </div>
       <p className="mb-10">
-        Since then, I have taken more formal computer science courses, including
-        Object-Oriented Programming in C++ at UCR, and I’m currently working
-        toward the IBM Full Stack Developer Specialization on Coursera.
-        Additionally, I’ve been actively involved in my university’s Association
-        for Computing Machinery (ACM), where I collaborated with a team of
-        developers to build a website for the Taekwondo Club @ UCR. I also
-        participated in CutieHack, a hackathon hosted by my university, gaining
-        hands-on experience in collaborative software development.
+        Since then, I’ve completed formal computer science courses, including
+        Object-Oriented Programming in C++ at UCR, and I’m currently pursuing
+        the{" "}
+        <Link
+          href="https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer"
+          rel="noopener noreferrer"
+          target="_blank">
+          <p className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
+            IBM Full Stack Developer Specialization on Coursera
+          </p>
+        </Link>
+        . I’ve also been actively involved in my university’s{" "}
+        <Link
+          href="https://acm.cs.ucr.edu/"
+          rel="noopener noreferrer"
+          target="_blank">
+          <p className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
+            ACM
+          </p>
+        </Link>
+        , where I collaborated on building a website for the{" "}
+        <Link
+          href="https://github.com/acm-ucr/tkd-website"
+          rel="noopener noreferrer"
+          target="_blank">
+          <p className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
+            Taekwondo Club at UCR
+          </p>
+        </Link>
+        . Additionally, I gained hands-on experience in collaborative software
+        development by participating in{" "}
+        <Link
+          href="https://cutiehack.com/"
+          rel="noopener noreferrer"
+          target="_blank">
+          <p className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
+            CutieHack
+          </p>
+        </Link>
+        , a hackathon hosted by my university.
       </p>
       <p className="mb-10">
         I aspire to become a frontend software engineer and thrive in a
         collaborative engineering team where I can contribute, learn, and grow
         alongside other developers. I love working in a team setting, seeing
         projects evolve, and building scalable applications that make an impact.
-      </p>
-      <p className="bt-10">
-        While my primary focus is frontend development, I am also delving into
-        backend technologies to become a full-stack developer. My passion for
-        programming keeps me coming back—I love the creative freedom of
-        building, the constant learning process, and the problem-solving aspect
-        of software engineering. There’s nothing more fulfilling than bringing
-        ideas to life through code, and I’m excited to continue growing in this
-        field.
       </p>
     </div>
   );
