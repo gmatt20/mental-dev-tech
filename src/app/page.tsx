@@ -1,16 +1,12 @@
-import Nav from "../components/Nav/Nav";
-import Landing from "../components/Landing/Landing";
+import Landing from "@/components/Landing/Landing";
 import Tech from "@/components/Tech/Tech";
-import About from "../components/About/About";
-import Projects from "../components/Projects";
-import Experience from "../components/Experience";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import About from "@/components/About/About";
+import TechStack from "@/components/Tech/TechStack";
+
 
 export default function Home() {
   return (
     <>
-      <Nav />
       <Landing />
       <div className="my-20 mx-10 -z-10 lg:mx-20">
         <p className="text-left text-2xl leading-10 bg-darker p-8 rounded-lg">
@@ -22,11 +18,7 @@ export default function Home() {
       </div>
       <Tech />
       <About />
-      {/*
-      <Projects />
-      <Experience />
-      <Contact />
-      <Footer /> */}
+      <TechStack />
     </>
   );
 }
