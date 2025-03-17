@@ -15,6 +15,7 @@ export const ProjectData = [
   },
   {
     url: notes,
+    link: "",
     title: "Fullstack Notes Application (coming soon)",
     alt: "Picture of full stack notes web application coming soon",
   },
