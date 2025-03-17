@@ -2,7 +2,7 @@ import Landing from "@/components/Landing/Landing";
 import Tech from "@/components/Tech/Tech";
 import About from "@/components/About/About";
 import TechStack from "@/components/Tech/TechStack";
-
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -19,6 +19,7 @@ export default function Home() {
       <Tech />
       <About />
       <TechStack />
+      <Projects />
     </>
   );
 }
