@@ -1,3 +1,5 @@
+import { BsLinkedin } from "react-icons/bs";
+
 export default function Footer() {
   return (
     <div className="bg-darker max-md:flex-col flex justify-evenly items-center p-10 font-syne">
@@ -22,6 +24,7 @@ export default function Footer() {
       </div>
       <div>
         <p>Get to know me:</p>
+        <BsLinkedin />
       </div>
     </div>
   );
