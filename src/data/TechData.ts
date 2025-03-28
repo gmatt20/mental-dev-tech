@@ -10,6 +10,7 @@ import {
   SiPostman,
   SiTailwindcss,
   SiCplusplus,
+  SiPython,
   SiGit,
   SiGithub,
 } from "@icons-pack/react-simple-icons";
@@ -69,6 +70,11 @@ export const TechData = [
     component: SiCplusplus,
     name: "C++",
     color: "#00599C",
+  },
+  {
+    component: SiPython,
+    name: "Python",
+    color: "#3776AB",
   },
   {
     component: SiGit,

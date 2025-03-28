@@ -32,13 +32,13 @@ export default function TechStack() {
   const filteredVersionControl = TechData.filter(
     (tech) => tech.name === "Git" || tech.name === "GitHub"
   );
-  const filteredLearningCs = TechData.filter((tech) => tech.name === "C++");
+  const filteredLearning = TechData.filter((tech) => tech.name === "C++" || tech.name == "Python");
   
   const techCategories = [
     { title: "FRONTEND", data: filteredFrontend },
     { title: "BACKEND (CURRENTLY LEARNING)", data: filteredBackend },
     { title: "VERSION CONTROL", data: filteredVersionControl },
-    { title: "LEARNING CS", data: filteredLearningCs },
+    { title: "LEARNING", data: filteredLearning },
   ];
 
   return (
