@@ -7,9 +7,9 @@ interface List {
 
 const listItems: List[] = [
   { item: "About", id: 1 },
-  { item: "Projects", id: 2 },
+  { item: "Tech Stack", id: 2 },
   { item: "MENTAL DEV TECH", id: 3 },
-  { item: "Experience", id: 4 },
+  { item: "Projects", id: 4 },
   { item: "Blog", id: 5 },
 ];
 

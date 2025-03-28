@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <>
+    <div className="mb-10">
       <h1 className="font-syne text-center text-5xl mb-10">PROJECTS</h1>
       <div className="grid grid-cols-2 grid-flow-row gap-10 w-screen max-md:grid-cols-1">
         {ProjectData.map((project, id) => (
@@ -31,6 +31,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }

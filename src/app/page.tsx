@@ -3,7 +3,6 @@ import Tech from "@/components/Tech/Tech";
 import About from "@/components/About/About";
 import TechStack from "@/components/Tech/TechStack";
 import Projects from "@/components/Projects";
-import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
       <About />
       <TechStack />
       <Projects />
-      <Experience />
     </>
   );
 }
