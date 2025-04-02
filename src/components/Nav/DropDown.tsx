@@ -31,22 +31,22 @@ export default function DropDown() {
   ];
 
   return (
-    <div className="md:hidden flex gap-6 flex-rowx items-center justify-between">
+    <div className="md:hidden relative flex gap-6 flex-rowx items-center justify-between">
       <h1
-        className={`text-left text-4xl hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active text-primary ${syne.className} tracking-widest`}>
+        className={`text-left text-4xl hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md text-primary ${syne.className} tracking-widest`}>
         MENTAL DEV TECH
       </h1>
       {open ? (
-        <div className="bg-darker absolute top-0 right-0 h-screen py-10 px-5 text-3xl ">
+        <div className="bg-darker absolute top-0 -right-8 h-screen text-3xl">
           <X
             size={40}
             onClick={handleOpen}
-            className="absolute right-5 top-5 cursor-pointer"
+            className="absolute right-7 top-7 hover:bg-dark hover:cursor-pointer hover:duration-150 hover:ease-in"
           />
-          <ul>
+          <ul className="mt-20">
             {listItems.map((item) => (
               <li
-                className="text-center my-5 py-2 px-3 hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active"
+                className="text-center p-10 w-full hover:bg-dark hover:cursor-pointer hover:duration-150 hover:ease-in"
                 key={item.id}>
                 {item.item}
               </li>

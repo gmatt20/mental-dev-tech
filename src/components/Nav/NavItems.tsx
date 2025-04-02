@@ -24,7 +24,7 @@ const NavItems: React.FC = () => {
   return (
     <div className="hidden gap-6 flex-row items-center justify-between md:flex">
       <div>
-        <h1 className="text-left mr-5 text-3xl hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in  rounded-md active:bg-active  text-primary font-syne tracking-widest">
+        <h1 className="text-left mr-5 p-2 text-3xl hover:bg-dark hover:cursor-pointer hover:duration-150 hover:ease-in  rounded-md text-primary font-syne tracking-widest">
           MENTAL DEV TECH
         </h1>
       </div>
@@ -32,7 +32,7 @@ const NavItems: React.FC = () => {
         {listItems.map((item) => (
           <li
             className={
-              "text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active"
+              "text-center hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md"
             }
             key={item.id}>
             {item.item}
