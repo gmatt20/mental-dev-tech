@@ -8,9 +8,7 @@ interface List {
 const listItems: List[] = [
   { item: "About", id: 1 },
   { item: "Tech Stack", id: 2 },
-  { item: "MENTAL DEV TECH", id: 3 },
-  { item: "Projects", id: 4 },
-  { item: "Blog", id: 5 },
+  { item: "Projects", id: 3 },
 ];
 
 const gugi = Gugi({
@@ -24,19 +22,24 @@ const syne = Syne({
 
 const NavItems: React.FC = () => {
   return (
-    <ul className="hidden gap-6 flex-row items-center justify-center md:flex ">
-      {listItems.map((item) => (
-        <li
-          className={` ${
-            item.id === 3
-              ? `text-center text-4xl hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in  rounded-md active:bg-active  text-primary ${syne.className} tracking-widest`
-              : "text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active"
-          }`}
-          key={item.id}>
-          {item.item}
-        </li>
-      ))}
-    </ul>
+    <div className="hidden gap-6 flex-row items-center justify-between md:flex">
+      <div>
+        <h1 className="text-left mr-5 text-3xl hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in  rounded-md active:bg-active  text-primary font-syne tracking-widest">
+          MENTAL DEV TECH
+        </h1>
+      </div>
+      <ul className="hidden gap-6 flex-row items-center justify-between md:flex ">
+        {listItems.map((item) => (
+          <li
+            className={
+              "text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active"
+            }
+            key={item.id}>
+            {item.item}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
