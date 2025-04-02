@@ -11,7 +11,7 @@ const syne = Syne({
 
 export default function About() {
   return (
-    <div className="w-fit text-left text-lg leading-10 flex flex-col items-center">
+    <div id="about" className="w-fit text-left text-lg leading-10 flex flex-col items-center">
       <h1 className={`${syne.className} text-5xl mb-5 text-center`}>
         ABOUT ME
       </h1>

@@ -12,15 +12,26 @@ export default function Footer() {
       </div>
       <div className="max-md:mb-10">
         <ul className="gap-6 flex-col items-center justify-center flex ">
-          <li className="text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active">
-            HOME
-          </li>
-          <li className="text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active">
-            ABOUT
-          </li>
-          <li className="text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active">
-            PROJECTS
-          </li>
+          <Link href="#home">
+            <li className="text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active">
+              HOME
+            </li>
+          </Link>
+          <Link href="#about">
+            <li className="text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active">
+              ABOUT
+            </li>
+          </Link>
+          <Link href="#tech-stack">
+            <li className="text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active">
+              TECH STACK
+            </li>
+          </Link>
+          <Link href="#projects" >
+            <li className="text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active">
+              PROJECTS
+            </li>
+          </Link>
           <li className="text-center hover:bg-hover hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md active:bg-active">
             BLOG
           </li>

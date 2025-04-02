@@ -6,7 +6,7 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <>
+    <div id="home">
       <Landing />
       <div className="my-20 -z-10 lg:mx-20">
         <p className="text-left text-2xl leading-10 bg-darker p-8 rounded-lg">
@@ -20,6 +20,6 @@ export default function Home() {
       <About />
       <TechStack />
       <Projects />
-    </>
+    </div>
   );
 }

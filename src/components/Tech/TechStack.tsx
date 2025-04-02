@@ -42,7 +42,7 @@ export default function TechStack() {
   ];
 
   return (
-    <div className="my-10 flex flex-col justify-center items-center">
+    <div id="tech-stack" className="my-10 flex flex-col justify-center items-center">
       <div>
         <h1 className={`${syne.className} text-5xl mb-10 text-center`}>
           MY TECH STACK
