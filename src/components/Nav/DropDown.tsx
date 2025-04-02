@@ -26,9 +26,8 @@ export default function DropDown() {
 
   const listItems = [
     { item: "About", id: 1 },
-    { item: "Projects", id: 2 },
-    { item: "Experience", id: 3 },
-    { item: "Blog", id: 4 },
+    { item: "Tech Stack", id: 2 },
+    { item: "Projects", id: 3 },
   ];
 
   return (
