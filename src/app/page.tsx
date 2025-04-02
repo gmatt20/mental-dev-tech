@@ -1,4 +1,5 @@
 import Landing from "@/components/Landing/Landing";
+import LandingWelcome from "@/components/Landing/LandingWelcome";
 import Tech from "@/components/Tech/Tech";
 import About from "@/components/About/About";
 import TechStack from "@/components/Tech/TechStack";
@@ -8,14 +9,7 @@ export default function Home() {
   return (
     <div id="home">
       <Landing />
-      <div className="my-20 -z-10 lg:mx-20">
-        <p className="text-left text-2xl leading-10 bg-darker p-8 rounded-lg">
-          Hi, I’m Matthew, a passionate software developer based in Los Angeles,
-          California. I specialize in frontend web development. With over a year
-          of experience, I create beautiful, user-friendly, and responsive
-          websites.
-        </p>
-      </div>
+      <LandingWelcome />
       <Tech />
       <About />
       <TechStack />
