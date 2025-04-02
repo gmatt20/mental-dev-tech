@@ -26,16 +26,23 @@ export default function Landing() {
         />
 
         {/* <Image src={computer} width={400} height={400} alt="Mr. Iby" /> */}
-        <div className="absolute -z-0 flex flex-col items-center justify-center top-0 bottom-0 left-0 right-0 max-md:top-40 px-10">
+        <div className="absolute -z-0 flex flex-col items-center justify-center top-0 bottom-0 left-0 right-0 max-md:top-40 px-10 gap-5">
           <TypeAnimation
-            sequence={[800, "FRONTEND DEVELOPER"]}
+            sequence={[500, "MATTHEW GARCIA"]}
             wrapper="span"
-            className={`${syne.className} text-6xl max-md:text-3xl text-primary text-center font-extrabold`}
+            className={`${syne.className} text-6xl max-md:text-3xl text-text text-center font-extrabold`}
             speed={60}
             cursor={false}
           />
           <TypeAnimation
-            sequence={[1500, "Los Angeles, California"]}
+            sequence={[1500, "FRONTEND DEVELOPER"]}
+            wrapper="span"
+            className={`${syne.className} text-4xl max-md:text-xl text-primary text-center font-extrabold`}
+            speed={60}
+            cursor={false}
+          />
+          <TypeAnimation
+            sequence={[2500, "Los Angeles, California"]}
             wrapper="span"
             className={`${syne.className} text-2xl max-md:text-lg text-white text-center`}
             speed={40}
