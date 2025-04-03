@@ -31,11 +31,11 @@ export default function About() {
           <TrafficLights />
           <div className="mt-5">
             <div className="mb-5">
-              <h1 className="text-3xl leading-10 font-bold mb-10">
+              <h1 className="text-3xl leading-10 font-bold max-sm:mb-5 max-md:text-2xl mb-10">
                 Chapter 1: The Call to Build
               </h1>
               <div className="md:flex ">
-                <p className="md:w-[50%] sm:mb-10 md:mr-10">
+                <p className="md:w-[50%] sm:mb-10 md:mr-10 max-md:text-sm max-md:leading-7">
                   My journey into software development started while studying
                   psychology at the{" "}
                   <Link
@@ -78,11 +78,11 @@ export default function About() {
           <TrafficLights />
           <div className="mt-5">
             <div className="mb-5">
-              <h1 className="text-3xl leading-10 font-bold mb-10">
+              <h1 className="text-3xl leading-10 font-bold mb-10 max-sm:mb-5 max-md:text-2xl">
                 Chapter 2: Crossing the Threshold
               </h1>
               <div className="md:flex ">
-                <p className="md:w-[50%] sm:mb-10 md:mr-10">
+                <p className="md:w-[50%] sm:mb-10 md:mr-10 max-md:text-sm max-md:leading-7">
                   Although I didn’t pursue additional CS courses at first, I
                   began teaching myself HTML, CSS, and JavaScript as a hobby.
                   Everything changed in the summer of 2024 when I decided to
@@ -117,11 +117,11 @@ export default function About() {
           <TrafficLights />
           <div className="mt-5">
             <div className="mb-5">
-              <h1 className="text-3xl leading-10 font-bold mb-10">
+              <h1 className="text-3xl leading-10 font-bold mb-10 max-sm:mb-5 max-md:text-2xl">
                 Chapter 3: Taking a leap of faith
               </h1>
               <div className="md:flex ">
-                <p className="md:w-[50%] sm:mb-10 md:mr-10">
+                <p className="md:w-[50%] sm:mb-10 md:mr-10 max-md:text-sm max-md:leading-7">
                   Since then, I’ve completed more formal computer science
                   courses, including Object-Oriented Programming and Data
                   Structures and Algorithms in C++ at UCR, and am currently
@@ -181,11 +181,11 @@ export default function About() {
           <TrafficLights />
           <div className="mt-5">
             <div className="mb-5">
-              <h1 className="text-3xl leading-10 font-bold mb-10">
+              <h1 className="text-3xl leading-10 font-bold mb-10 max-sm:mb-5 max-md:text-2xl">
                 Chapter 4: Embracing the Destiny
               </h1>
               <div className="md:flex ">
-                <p className="md:w-[50%] sm:mb-10 md:mr-10">
+                <p className="md:w-[50%] sm:mb-10 md:mr-10 max-md:text-sm max-md:leading-7">
                   I aspire to become a frontend software engineer, thrive in a
                   collaborative engineering team, and build scalable
                   applications that make an impact. I love working with a team,
