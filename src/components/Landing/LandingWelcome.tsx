@@ -6,7 +6,7 @@ export default function LandingWelcome(){
       <TrafficLights />
       <div className="mt-5">
         <div className="mb-5">
-          <h1 className="text-3xl leading-10 mb-2">
+          <h1 className="text-3xl leading-10 mb-2 font-bold">
             &quot;What keeps bringing me back to software development is the love and
             thrill of building software.&quot;
           </h1>

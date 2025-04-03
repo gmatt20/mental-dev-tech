@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const montserrat = Montserrat({
-  weight: ["500"],
+  weight: ["300","500","700"],
   subsets: ["sans"],
 });
 
