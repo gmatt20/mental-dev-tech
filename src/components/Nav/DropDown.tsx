@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Gugi, Syne } from "next/font/google";
+import Link from "next/link";
 
 const gugi = Gugi({
   weight: "400",
@@ -25,16 +26,16 @@ export default function DropDown() {
   };
 
   const listItems = [
-    { item: "About", id: 1 },
-    { item: "Tech Stack", id: 2 },
-    { item: "Projects", id: 3 },
+    { item: "About", id: 1, link: "#about" },
+    { item: "Tech Stack", id: 2, link: "#tech-stack" },
+    { item: "Projects", id: 3, link: "#projects" },
   ];
 
   return (
     <div className="md:hidden relative flex gap-6 flex-rowx items-center justify-between">
       <h1
         className={`text-left text-4xl hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md text-primary ${syne.className} tracking-widest`}>
-        MENTAL DEV TECH
+        <Link href="#home">MENTAL DEV TECH</Link>
       </h1>
       {open ? (
         <div className="bg-darker absolute top-0 -right-8 h-screen text-3xl">
@@ -46,9 +47,10 @@ export default function DropDown() {
           <ul className="mt-20">
             {listItems.map((item) => (
               <li
+                onClick={handleOpen}
                 className="text-center p-10 w-full hover:bg-dark hover:cursor-pointer hover:duration-150 hover:ease-in"
                 key={item.id}>
-                {item.item}
+                <Link href={item.link}>{item.item}</Link>
               </li>
             ))}
           </ul>
