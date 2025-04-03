@@ -1,12 +1,19 @@
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import Link from "next/link";
+import { Syne } from "next/font/google";
+
+const syne = Syne({
+  weight: ["800"],
+  subsets: ["greek", "latin", "latin-ext"],
+});
 
 export default function Footer() {
   return (
     <div className="bg-darker max-md:flex-col flex justify-evenly items-center p-10">
       <div className="max-md:mb-10">
-        <h1 className="text-xl uppercase font-syne text-left max-md:text-center">
+        <h1
+          className={`${syne.className} text-xl uppercase text-left max-md:text-center`}>
           Matthew Garcia
         </h1>
       </div>

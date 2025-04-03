@@ -3,6 +3,12 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import { Syne } from "next/font/google";
+
+const syne = Syne({
+  weight: ["800"],
+  subsets: ["greek", "latin", "latin-ext"],
+});
 
 export default function DropDown() {
   const [open, setOpen] = useState(false);
@@ -23,7 +29,8 @@ export default function DropDown() {
 
   return (
     <div className="md:hidden relative flex gap-6 flex-rowx items-center justify-between">
-      <h1 className="text-left text-4xl hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md text-primary font-syne tracking-widest">
+      <h1
+        className={`${syne.className} text-left text-4xl hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md text-primary tracking-widest`}>
         <Link href="#home">MENTAL DEV TECH</Link>
       </h1>
       {open ? (

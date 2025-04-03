@@ -4,6 +4,12 @@ import { ProjectData } from "@/data/ProjectData";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
+import { Syne } from "next/font/google";
+
+const syne = Syne({
+  weight: ["800"],
+  subsets: ["greek", "latin", "latin-ext"],
+});
 
 export default function Projects() {
   return (
@@ -11,7 +17,9 @@ export default function Projects() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 1 } }}>
-        <h1 className="font-syne text-center text-5xl mb-10">PROJECTS</h1>
+        <h1 className={`${syne.className} text-center text-5xl mb-10`}>
+          PROJECTS
+        </h1>
         <div className="grid grid-cols-2 grid-flow-row gap-10 w-[100%] max-md:grid-cols-1">
           {ProjectData.map((project, id) => (
             <div

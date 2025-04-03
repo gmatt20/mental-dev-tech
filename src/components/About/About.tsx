@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "motion/react";
 import Image from "next/image";
 import UCR from "@/public/ucr-and-bell-tower.webp";
 import SanFrancisco from "@/public/san-francisco.webp";
@@ -7,14 +8,21 @@ import Leap from "@/public/leap.webp";
 import Journey from "@/public/journey.webp";
 import Link from "next/link";
 import TrafficLights from "../ui/TrafficLights";
-import { motion } from "motion/react";
+import { Syne } from "next/font/google";
+
+const syne = Syne({
+  weight: ["800"],
+  subsets: ["greek", "latin", "latin-ext"],
+});
 
 export default function About() {
   return (
     <div
       id="about"
       className="w-fit text-left text-lg leading-10 flex flex-col items-center lg:mx-20">
-      <h1 className="font-syne text-5xl mb-5 text-center">ABOUT ME</h1>
+      <h1 className={`${syne.className} text-5xl mb-5 text-center`}>
+        ABOUT ME
+      </h1>
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}>
@@ -51,10 +59,10 @@ export default function About() {
                     height={500}
                   />
                   <p className="text-xs w-[90%] mt-2">
-                    Fun fact: I'm currently majoring in psychology but also
-                    taking computer science courses to deepen my knowledge. It’s
-                    an exciting way to merge my passion for human behavior with
-                    my growing interest in tech!
+                    Fun fact: I&apos;m currently majoring in psychology but also
+                    taking computer science courses to deepen my knowledge.
+                    It&apos;s an exciting way to merge my passion for human
+                    behavior with my growing interest in tech!
                   </p>
                 </div>
               </div>
