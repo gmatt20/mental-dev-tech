@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Mental Dev Tech",
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Nav />
         <div className="mx-10">
           {children}
+          <Analytics />
           <SpeedInsights />
         </div>
         <Footer />
