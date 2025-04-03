@@ -1,5 +1,6 @@
 import { Syne } from "next/font/google";
 import { TechData } from "@/data/TechData";
+import TrafficLights from "../ui/TrafficLights";
 const syne = Syne({
   weight: "800",
   subsets: ["sans"],
@@ -7,12 +8,12 @@ const syne = Syne({
 
 const renderTechStack = (techArr) => {
   return techArr.map((tech, id) => (
-    <div key={id}>
+    <div className="flex flex-col items-center" key={id}>
       <tech.component color={tech.color} className="p-2" size={70} />
       <p>{tech.name}</p>
     </div>
   ));
-}
+};
 
 export default function TechStack() {
   const filteredFrontend = TechData.filter(
@@ -32,30 +33,39 @@ export default function TechStack() {
   const filteredVersionControl = TechData.filter(
     (tech) => tech.name === "Git" || tech.name === "GitHub"
   );
-  const filteredLearning = TechData.filter((tech) => tech.name === "C++" || tech.name == "Python");
-  
+  const filteredLearning = TechData.filter(
+    (tech) => tech.name === "C++" || tech.name == "Python"
+  );
+
   const techCategories = [
     { title: "FRONTEND", data: filteredFrontend },
-    { title: "BACKEND (CURRENTLY LEARNING)", data: filteredBackend },
+    { title: "BACKEND", data: filteredBackend },
     { title: "VERSION CONTROL", data: filteredVersionControl },
     { title: "LEARNING", data: filteredLearning },
   ];
 
   return (
-    <div id="tech-stack" className="my-10 flex flex-col justify-center items-center">
+    <div
+      id="tech-stack"
+      className="my-10 flex flex-col justify-center items-center">
       <div>
         <h1 className={`${syne.className} text-5xl mb-10 text-center`}>
           MY TECH STACK
         </h1>
         {techCategories.map((category, id) => (
-          <div key={id}>
-            <div className="bg-darker flex flex-col items-center py-10 rounded-lg my-5 w-[80%] mx-auto">
-              <h1
-                className={`${syne.className} max-md:text-xl text-3xl text-pretty mb-5 text-center`}>
-                {category.title}
-              </h1>
-              <div className="grid grid-flow-col max-md:grid-rows-2 gap-5 place-items-center text-center">
-                {renderTechStack(category.data)}
+          <div
+            key={id}
+            className="bg-darker p-8 rounded-lg my-5 w-[80%] mx-auto">
+            <div className="flex flex-col">
+              <TrafficLights />
+              <div className="mt-5">
+                <h1
+                  className={`${syne.className} max-md:text-xl text-3xl text-pretty mb-5 text-center`}>
+                  {category.title}
+                </h1>
+                <div className="col-span-3 flex flex-wrap justify-center gap-10 text-center p-10 -center">
+                  {renderTechStack(category.data)}
+                </div>
               </div>
             </div>
           </div>
