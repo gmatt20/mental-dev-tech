@@ -48,7 +48,7 @@ export default function About() {
                 <Image
                   src={UCR}
                   alt="UC Riverside"
-                  className="rounded-lg mx-0"
+                  className="rounded-lg mx-0 mt-5"
                   width={500}
                   height={500}
                 />
@@ -84,7 +84,7 @@ export default function About() {
                 <Image
                   src={SanFrancisco}
                   alt="San Francisco"
-                  className="rounded-lg mx-0"
+                  className="rounded-lg mx-0 mt-5"
                   width={500}
                   height={500}
                 />
@@ -152,7 +152,7 @@ export default function About() {
                 <Image
                   src={Leap}
                   alt="Lizard taking a leap of faith"
-                  className="rounded-lg mx-0"
+                  className="rounded-lg mx-0 mt-5"
                   width={500}
                   height={500}
                 />
@@ -179,7 +179,7 @@ export default function About() {
                 <Image
                   src={Journey}
                   alt="A road"
-                  className="rounded-lg mx-0"
+                  className="rounded-lg mx-0 mt-5"
                   width={500}
                   height={500}
                 />

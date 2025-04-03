@@ -1,10 +1,10 @@
 import Superman from "@/public/superman.webp";
 import Image from "next/image";
 
-export default function Inspo(){
+export default function Inspo() {
   return (
     <div className="w-screen flex justify-center items-center flex-col mb-10">
-      <div className="w-[80%]">
+      <div className="w-[60%]">
         <Image
           src={Superman}
           alt="Photo of superman"
@@ -12,7 +12,7 @@ export default function Inspo(){
           width={1000}
           height={1000}
         />
-        <h1 className="text-2xl md:text-5xl">
+        <h1 className="text-2xl leading-9 md:text-5xl ">
           &quot;The only way to do great work is to love what you do.&quot;
         </h1>
         <p>- Steve Jobs</p>
