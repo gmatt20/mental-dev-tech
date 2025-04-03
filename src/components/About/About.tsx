@@ -52,7 +52,7 @@ export default function About() {
                   width={500}
                   height={500}
                 />
-                <p className="text-xs">
+                <p className="text-xs w-[90%] mt-2">
                   Fun fact: I'm currently majoring in psychology but also taking
                   computer science courses to deepen my knowledge. It’s an
                   exciting way to merge my passion for human behavior with my
@@ -88,7 +88,7 @@ export default function About() {
                   width={500}
                   height={500}
                 />
-                <p className="text-xs">
+                <p className="text-xs w-[90%] mt-2">
                   Fun fact: A road trip to San Francisco in 2024 solidified my
                   desire to pursue software engineering. It helped me realize
                   this was the field I wanted to dive into.
@@ -108,7 +108,7 @@ export default function About() {
             <div className="md:flex ">
               <p className="md:w-[50%] sm:mb-10 md:mr-10">
                 Since then, I’ve completed more formal computer science courses,
-                including Object-Oriented Programming in C++ at UCR, and am
+                including Object-Oriented Programming and Data Structures and Algorithms in C++ at UCR, and am
                 currently pursuing the{" "}
                 <Link
                   href="https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer"

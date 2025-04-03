@@ -15,7 +15,7 @@ export const ProjectData = [
   },
   {
     url: notes,
-    link: "",
+    link: "https://github.com/gmatt20/notes-application",
     title: "Fullstack Notes Application (coming soon)",
     alt: "Picture of full stack notes web application coming soon",
   },
