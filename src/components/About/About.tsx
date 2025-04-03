@@ -40,10 +40,9 @@ export default function About() {
                   <Link
                     href="https://www.ucr.edu/"
                     rel="noopener noreferrer"
-                    target="_blank">
-                    <p className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
-                      University of California, Riverside
-                    </p>
+                    target="_blank"
+                    className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
+                    University of California, Riverside
                   </Link>
                   . While exploring different subjects, I took my first formal
                   computer science course in C++, sparking my interest in
@@ -129,38 +128,34 @@ export default function About() {
                   <Link
                     href="https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer"
                     rel="noopener noreferrer"
-                    target="_blank">
-                    <p className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
-                      IBM Full Stack Developer Specialization on Coursera
-                    </p>
+                    target="_blank"
+                    className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
+                    IBM Full Stack Developer Specialization on Coursera
                   </Link>
                   . I’m also involved in my university’s{" "}
                   <Link
                     href="https://acm.cs.ucr.edu/"
                     rel="noopener noreferrer"
-                    target="_blank">
-                    <p className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
-                      ACM
-                    </p>
+                    target="_blank"
+                    className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
+                    ACM
                   </Link>
                   , where I collaborated on building a website for the{" "}
                   <Link
                     href="https://github.com/acm-ucr/tkd-website"
                     rel="noopener noreferrer"
-                    target="_blank">
-                    <p className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
-                      Taekwondo Club at UCR
-                    </p>
+                    target="_blank"
+                    className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
+                    Taekwondo Club at UCR
                   </Link>
                   . I also gained hands-on experience in collaborative software
                   development by participating in{" "}
                   <Link
                     href="https://cutiehack.com/"
                     rel="noopener noreferrer"
-                    target="_blank">
-                    <p className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
+                    target="_blank"
+                    className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
                       CutieHack
-                    </p>
                   </Link>
                   , a hackathon hosted by my university.
                 </p>
