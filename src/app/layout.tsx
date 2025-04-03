@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-dark text-text`}>
+      <body className={`${montserrat.className} bg-dark text-text overflow-x-hidden`}>
         <Nav />
         <div className="mx-10">{children}</div>
         <Footer />
