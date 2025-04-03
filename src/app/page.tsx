@@ -8,7 +8,7 @@ import Inspo from "@/components/Inspo";
 
 export default function Home() {
   return (
-    <div id="home">
+    <div id="home" className="w-screen">
       <Landing />
       <LandingWelcome />
       <Tech />

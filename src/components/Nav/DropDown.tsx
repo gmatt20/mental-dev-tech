@@ -30,8 +30,8 @@ export default function DropDown() {
   return (
     <div className="md:hidden relative flex gap-6 flex-rowx items-center justify-between">
       <h1
-        className={`${syne.className} text-left text-4xl hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md text-primary tracking-widest`}>
-        <Link href="#home">MENTAL DEV TECH</Link>
+        className={`${syne.className} text-left text-xl hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md text-primary tracking-widest`}>
+        <Link href="#home">MDT</Link>
       </h1>
       {open ? (
         <div className="bg-darker absolute top-0 -right-8 h-screen text-3xl">

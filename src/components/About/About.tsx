@@ -20,7 +20,8 @@ export default function About() {
     <div
       id="about"
       className="w-fit text-left text-lg leading-10 flex flex-col items-center lg:mx-20">
-      <h1 className={`${syne.className} text-5xl mb-5 text-center`}>
+      <h1
+        className={`${syne.className} text-5xl mb-5 text-center max-md:text-3xl`}>
         ABOUT ME
       </h1>
       <motion.div
@@ -71,7 +72,7 @@ export default function About() {
         </div>
       </motion.div>
       <motion.div
-        initial={{ x: 100, opacity: 0 }}
+        initial={{ x: 40, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}>
         <div className="bg-darker p-8 rounded-lg mb-10">
           <TrafficLights />
@@ -174,7 +175,7 @@ export default function About() {
         </div>
       </motion.div>
       <motion.div
-        initial={{ x: 100, opacity: 0 }}
+        initial={{ x: 40, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}>
         <div className="bg-darker p-8 rounded-lg">
           <TrafficLights />

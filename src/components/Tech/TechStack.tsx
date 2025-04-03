@@ -59,7 +59,8 @@ export default function TechStack() {
       id="tech-stack"
       className="my-10 flex flex-col justify-center items-center">
       <div>
-        <h1 className={`${syne.className} text-5xl mb-10 text-center`}>
+        <h1
+          className={`${syne.className} text-5xl mb-10 text-center max-md:text-3xl`}>
           MY TECH STACK
         </h1>
         {techCategories.map((category, id) => (
