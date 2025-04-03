@@ -26,7 +26,7 @@ export default function Projects() {
             <div
               key={id}
               className="flex flex-col gap-10 items-center justify-center">
-              <div className="bg-darker rounded-lg p-10 max-w-[80%] text-center h-[100%]">
+              <div className="bg-darker rounded-lg p-10 max-md:p-6 w-[80%]max-md:w-full text-center h-[100%]">
                 <Link
                   href={project.link}
                   rel="noopener noreferrer"
@@ -39,7 +39,9 @@ export default function Projects() {
                     />
                   </div>
                   <div>
-                    <h1 className="text-xl">{project.title}</h1>
+                    <h1 className="text-xl max-md:text-base">
+                      {project.title}
+                    </h1>
                   </div>
                 </Link>
               </div>
