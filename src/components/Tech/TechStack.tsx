@@ -68,7 +68,7 @@ export default function TechStack() {
             key={id}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, transition: { duration: 1 } }}>
-            <div className="bg-darker p-8 rounded-lg my-5 w-[80%] mx-auto">
+            <div className="bg-darker p-8 rounded-lg my-5 w-[80%] max-md:w-full mx-auto">
               <div className="flex flex-col">
                 <TrafficLights />
                 <div className="mt-5">
@@ -76,7 +76,7 @@ export default function TechStack() {
                     className={`${syne.className} max-md:text-xl text-3xl text-pretty mb-5 text-center`}>
                     {category.title}
                   </h1>
-                  <div className="col-span-3 flex flex-wrap justify-center gap-10 text-center p-10 -center">
+                  <div className="col-span-3 flex flex-wrap justify-center gap-10 max-md:gap-5 max-md:p-5 text-center p-10 -center ">
                     {renderTechStack(category.data)}
                   </div>
                 </div>
