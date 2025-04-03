@@ -1,5 +1,4 @@
 import React from "react";
-import { Gugi, Syne } from "next/font/google";
 import Link from "next/link";
 
 interface List {
@@ -13,15 +12,6 @@ const listItems: List[] = [
   { item: "Tech Stack", id: 2, link: "#tech-stack" },
   { item: "Projects", id: 3, link: "#projects" },
 ];
-
-const gugi = Gugi({
-  weight: "400",
-  subsets: ["sans"],
-});
-const syne = Syne({
-  weight: "800",
-  subsets: ["sans"],
-});
 
 const NavItems: React.FC = () => {
   return (

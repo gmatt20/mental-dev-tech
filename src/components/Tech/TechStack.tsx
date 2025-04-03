@@ -1,13 +1,8 @@
 "use client";
 
-import { Syne } from "next/font/google";
 import { TechData } from "@/data/TechData";
 import TrafficLights from "../ui/TrafficLights";
 import { motion } from "motion/react";
-const syne = Syne({
-  weight: "800",
-  subsets: ["sans"],
-});
 
 const renderTechStack = (techArr) => {
   return techArr.map((tech, id) => (
@@ -52,20 +47,17 @@ export default function TechStack() {
       id="tech-stack"
       className="my-10 flex flex-col justify-center items-center">
       <div>
-        <h1 className={`${syne.className} text-5xl mb-10 text-center`}>
-          MY TECH STACK
-        </h1>
+        <h1 className="text-5xl mb-10 text-center font-syne">MY TECH STACK</h1>
         {techCategories.map((category, id) => (
           <motion.div
             key={id}
-            initial={{opacity: 0 }}
-            whileInView={{opacity: 1, transition: { duration: 1 } }}>
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}>
             <div className="bg-darker p-8 rounded-lg my-5 w-[80%] mx-auto">
               <div className="flex flex-col">
                 <TrafficLights />
                 <div className="mt-5">
-                  <h1
-                    className={`${syne.className} max-md:text-xl text-3xl text-pretty mb-5 text-center`}>
+                  <h1 className="max-md:text-xl text-3xl text-pretty mb-5 text-center font-syne">
                     {category.title}
                   </h1>
                   <div className="col-span-3 flex flex-wrap justify-center gap-10 text-center p-10 -center">
