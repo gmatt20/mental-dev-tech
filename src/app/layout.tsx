@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 };
 
 const montserrat = Montserrat({
-  weight: ["300","500","700"],
-  subsets: ["sans"],
+  weight: ["300", "500", "700"],
+  subsets: ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
 });
 
 export default function RootLayout({

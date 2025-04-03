@@ -5,24 +5,16 @@ import UCR from "@/public/ucr-and-bell-tower.webp";
 import SanFrancisco from "@/public/san-francisco.webp";
 import Leap from "@/public/leap.webp";
 import Journey from "@/public/journey.webp";
-import { Syne } from "next/font/google";
 import Link from "next/link";
 import TrafficLights from "../ui/TrafficLights";
 import { motion } from "motion/react";
-
-const syne = Syne({
-  weight: "800",
-  subsets: ["sans"],
-});
 
 export default function About() {
   return (
     <div
       id="about"
       className="w-fit text-left text-lg leading-10 flex flex-col items-center lg:mx-20">
-      <h1 className={`${syne.className} text-5xl mb-5 text-center`}>
-        ABOUT ME
-      </h1>
+      <h1 className="font-syne text-5xl mb-5 text-center">ABOUT ME</h1>
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}>
@@ -155,7 +147,7 @@ export default function About() {
                     rel="noopener noreferrer"
                     target="_blank"
                     className="inline bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">
-                      CutieHack
+                    CutieHack
                   </Link>
                   , a hackathon hosted by my university.
                 </p>

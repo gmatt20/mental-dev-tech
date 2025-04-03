@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        syne: ["Syne", "sans-serif"],
+        syne: ["Syne", "greek", "latin", "latin-ext"],
       },
       colors: {
         primary: "#db4d4d",
