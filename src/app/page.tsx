@@ -12,9 +12,9 @@ export default function Home() {
       <Landing />
       <LandingWelcome />
       <Tech />
-      <About />
       <TechStack />
       <Projects />
+      <About />
       <Inspo />
     </div>
   );

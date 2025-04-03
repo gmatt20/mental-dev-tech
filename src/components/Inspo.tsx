@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Inspo() {
   return (
-    <div className="flex justify-center items-center flex-col mb-10">
+    <div className="flex justify-center items-center flex-col my-10">
       <div className="w-full">
         <Image
           src={Superman}

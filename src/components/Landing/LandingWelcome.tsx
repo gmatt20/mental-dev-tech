@@ -12,13 +12,13 @@ export default function LandingWelcome() {
         <TrafficLights />
         <div className="mt-5">
           <div className="mb-5">
-            <h1 className="text-3xl leading-10 mb-2 font-bold max-md:text-xl">
+            <h1 className="text-3xl leading-10 mb-2 font-bold max-md:text-xl max-md:leading-7">
               &quot;What keeps bringing me back to software development is the
               love and thrill of building software.&quot;
             </h1>
             <p>- Matthew Garcia</p>
           </div>
-          <p className="text-left text-xl leading-10 max-md:text-sm">
+          <p className="text-left text-xl leading-10 max-md:text-sm max-md:leading-7">
             Hello! I’m Matthew, a software developer specializing in frontend
             web development. I focus on building beautiful, responsive, and
             user-friendly interfaces that not only look great but feel amazing
