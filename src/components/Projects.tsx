@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <div id="projects" className="mb-10">
+    <div id="projects" className="mb-10 flex flex-col items-center">
       <h1 className="font-syne text-center text-5xl mb-10">PROJECTS</h1>
-      <div className="grid grid-cols-2 grid-flow-row gap-10 w-screen max-md:grid-cols-1">
+      <div className="grid grid-cols-2 grid-flow-row gap-10 w-[100%] max-md:grid-cols-1">
         {ProjectData.map((project, id) => (
           <div
             key={id}
