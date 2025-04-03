@@ -10,8 +10,14 @@ const syne = Syne({
   subsets: ["greek", "latin", "latin-ext"],
 });
 
-const renderTechStack = (techArr) => {
-  return techArr.map((tech, id) => (
+interface Tech {
+  component: React.ElementType;
+  name: string;
+  color: string;
+}
+
+const renderTechStack = (techArr: Tech[]) => {
+  return techArr.map((tech, id: number) => (
     <div className="flex flex-col items-center" key={id}>
       <tech.component color={tech.color} className="p-2" size={70} />
       <p>{tech.name}</p>

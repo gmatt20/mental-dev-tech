@@ -21,7 +21,7 @@ export default function Projects() {
           PROJECTS
         </h1>
         <div className="grid grid-cols-2 grid-flow-row gap-10 w-[100%] max-md:grid-cols-1">
-          {ProjectData.map((project, id) => (
+          {ProjectData.map((project, id: number) => (
             <div
               key={id}
               className="flex flex-col gap-10 items-center justify-center">

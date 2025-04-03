@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import mockWeb from "@/public/mockWeb.webp";
 import notes from "@/public/notes.webp";
 import odin from "@/public/odin.webp";
@@ -6,7 +7,14 @@ import psycWeb from "@/public/psycWeb.webp";
 import rpool from "@/public/rpool.webp";
 import tkd from "@/public/tkd.webp";
 
-export const ProjectData = [
+interface Project {
+  url: StaticImageData;
+  link: string;
+  title: string;
+  alt: string;
+}
+
+export const ProjectData: Project[] = [
   {
     url: mockWeb,
     link: "https://gmatt20.github.io/mock-website1/",

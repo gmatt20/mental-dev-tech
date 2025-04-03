@@ -15,7 +15,13 @@ import {
   SiGithub,
 } from "@icons-pack/react-simple-icons";
 
-export const TechData = [
+interface Tech {
+  component: React.ElementType;
+  name: string;
+  color: string;
+}
+
+export const TechData : Tech[] = [
   {
     component: SiNextdotjs,
     name: "Next.js",
