@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Mental Dev Tech",
@@ -23,7 +24,10 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} bg-dark text-text overflow-x-hidden`}>
         <Nav />
-        <div className="mx-10">{children}</div>
+        <div className="mx-10">
+          {children}
+          <SpeedInsights />
+        </div>
         <Footer />
       </body>
     </html>
