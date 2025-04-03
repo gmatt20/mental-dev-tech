@@ -1,6 +1,8 @@
 import Image from "next/image";
 import UCR from "@/public/ucr-and-bell-tower.webp";
 import SanFrancisco from "@/public/san-francisco.webp";
+import Leap from "@/public/leap.webp";
+import Journey from "@/public/journey.webp";
 import { Syne } from "next/font/google";
 import Link from "next/link";
 import TrafficLights from "../ui/TrafficLights";
@@ -146,6 +148,15 @@ export default function About() {
                 </Link>
                 , a hackathon hosted by my university.
               </p>
+              <div className="w-[80%] md:w-[50%] lg:w-[40%] flex flex-col items-center bg-darker rounded-lg">
+                <Image
+                  src={Leap}
+                  alt="Lizard taking a leap of faith"
+                  className="rounded-lg mx-0"
+                  width={500}
+                  height={500}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -164,6 +175,15 @@ export default function About() {
                 that make an impact. I love working with a team, seeing projects
                 evolve, and contributing to meaningful software solutions.
               </p>
+              <div className="w-[80%] md:w-[50%] lg:w-[40%] flex flex-col items-center bg-darker rounded-lg">
+                <Image
+                  src={Journey}
+                  alt="A road"
+                  className="rounded-lg mx-0"
+                  width={500}
+                  height={500}
+                />
+              </div>
             </div>
           </div>
         </div>
