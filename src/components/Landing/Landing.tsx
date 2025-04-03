@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import computer from "@/public/computer.webp";
 import { Gugi, Syne } from "next/font/google";
 import { TypeAnimation } from "react-type-animation";
 import LosAngeles from "@/public/los-angeles.webp";
