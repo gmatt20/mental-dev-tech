@@ -12,8 +12,8 @@ export default function Home() {
       <Landing />
       <LandingWelcome />
       <Tech />
-      <TechStack />
       <Projects />
+      <TechStack />
       <About />
       <Inspo />
     </div>

@@ -8,7 +8,7 @@ export default function LandingWelcome() {
     <motion.div
       initial={{ x: -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}>
-      <div className="my-20 -z-10 lg:mx-20 bg-darker p-8 rounded-lg">
+      <div className="my-20 -z-10 lg:mx-60 bg-darker p-8 rounded-lg">
         <TrafficLights />
         <div className="mt-5">
           <div className="mb-5">

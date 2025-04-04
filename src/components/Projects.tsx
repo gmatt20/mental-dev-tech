@@ -18,7 +18,7 @@ export default function Projects() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 1 } }}>
         <h1
-          className={`${syne.className} text-center text-5xl max-md:text-3xl mb-10`}>
+          className={`${syne.className} text-center text-5xl max-md:text-3xl my-20`}>
           PROJECTS
         </h1>
         <div className="grid grid-cols-2 grid-flow-row gap-10 w-[100%] max-md:grid-cols-1">

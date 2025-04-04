@@ -21,7 +21,7 @@ export default function About() {
       id="about"
       className="w-fit text-left text-lg leading-10 flex flex-col items-center lg:mx-20">
       <h1
-        className={`${syne.className} text-5xl mb-5 text-center max-md:text-3xl`}>
+        className={`${syne.className} text-5xl mb-20 text-center max-md:text-3xl`}>
         ABOUT ME
       </h1>
       <motion.div
