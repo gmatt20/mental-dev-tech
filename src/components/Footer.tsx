@@ -24,9 +24,9 @@ export default function Footer() {
               HOME
             </li>
           </Link>
-          <Link href="#about">
+          <Link href="#projects">
             <li className="text-center hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md">
-              ABOUT
+              PROJECTS
             </li>
           </Link>
           <Link href="#tech-stack">
@@ -34,9 +34,9 @@ export default function Footer() {
               TECH STACK
             </li>
           </Link>
-          <Link href="#projects">
+          <Link href="#about">
             <li className="text-center hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md">
-              PROJECTS
+              ABOUT ME
             </li>
           </Link>
         </ul>

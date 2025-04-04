@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { Syne } from "next/font/google";
+import { AnimatePresence, motion } from "motion/react";
 
 const syne = Syne({
   weight: ["800"],
@@ -22,9 +23,9 @@ export default function DropDown() {
   };
 
   const listItems = [
-    { item: "About", id: 1, link: "#about" },
+    { item: "Projects", id: 1, link: "#projects" },
     { item: "Tech Stack", id: 2, link: "#tech-stack" },
-    { item: "Projects", id: 3, link: "#projects" },
+    { item: "About", id: 3, link: "#about" },
   ];
 
   return (
@@ -34,25 +35,44 @@ export default function DropDown() {
         <Link href="#home">MDT</Link>
       </h1>
       {open ? (
-        <div className="bg-darker absolute top-0 -right-8 h-screen text-3xl">
-          <X
-            size={40}
-            onClick={handleOpen}
-            className="absolute right-7 top-7 hover:bg-dark hover:cursor-pointer hover:duration-150 hover:ease-in"
-          />
-          <ul className="mt-20">
-            {listItems.map((item) => (
-              <li
-                onClick={handleOpen}
-                className="text-center p-10 w-full hover:bg-dark hover:cursor-pointer hover:duration-150 hover:ease-in"
-                key={item.id}>
-                <Link href={item.link}>{item.item}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <AnimatePresence>
+          <motion.div
+            initial={{ x: 300 }}
+            animate={{
+              x: 0,
+              transition: { type: "spring", stiffness: 100, damping: 20 },
+            }}
+            exit={{
+              x: 300,
+              transition: { type: "spring", stiffness: 100, damping: 20 },
+            }}
+            key="modal"
+            className="bg-darker absolute top-0 -right-8 h-screen text-3xl">
+            <X
+              size={40}
+              onClick={handleOpen}
+              className="absolute right-8 top-1 hover:bg-dark hover:cursor-pointer hover:duration-150 hover:ease-in"
+            />
+            <ul className="mt-20">
+              {listItems.map((item) => (
+                <li
+                  onClick={handleOpen}
+                  className="text-center p-10 w-full hover:bg-dark hover:cursor-pointer hover:duration-150 hover:ease-in"
+                  key={item.id}>
+                  <Link href={item.link}>{item.item}</Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </AnimatePresence>
       ) : (
-        <Menu onClick={handleOpen} size={40} className="cursor-pointer" />
+        <AnimatePresence>
+          <Menu
+            onClick={handleOpen}
+            size={40}
+            className="cursor-pointer hover:bg-dark hover:cursor-pointer hover:duration-150 hover:ease-in"
+          />
+        </AnimatePresence>
       )}
     </div>
   );
