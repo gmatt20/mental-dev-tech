@@ -76,7 +76,7 @@ export default function TechStack() {
                     className={`${syne.className} max-md:text-xl text-3xl text-pretty mb-5 text-center`}>
                     {category.title}
                   </h1>
-                  <div className="col-span-3 flex flex-wrap justify-center gap-10 max-md:gap-5 max-md:p-5 text-center p-10 -center ">
+                  <div className="col-span-3 flex flex-wrap justify-center gap-10 max-md:gap-5 max-md:p-5 text-center p-10">
                     {renderTechStack(category.data)}
                   </div>
                 </div>
