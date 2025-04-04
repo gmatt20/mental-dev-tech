@@ -35,7 +35,7 @@ export const ProjectData: Project[] = [
   },
   {
     url: origMDT,
-    link: "mentaldevtech.com",
+    link: "https://gmatt20.github.io/personal-website/",
     title: "Mental Dev Tech Original Website",
     alt: "Picture of first Mental Dev Tech website",
   },
