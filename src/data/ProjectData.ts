@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 import mockWeb from "@/public/mockWeb.webp";
-import notes from "@/public/notes.webp";
+import notes from "@/public/notion-clone.webp";
 import odin from "@/public/odin.webp";
 import origMDT from "@/public/origMDT.webp";
 import psycWeb from "@/public/psycWeb.webp";
@@ -29,8 +29,8 @@ export const ProjectData: Project[] = [
   },
   {
     url: notes,
-    link: "https://github.com/gmatt20/notes-application",
-    title: "Fullstack Notes Application (coming soon)",
+    link: "https://github.com/gmatt20/notion-clone",
+    title: "Fullstack Notion Clone Application",
     alt: "Picture of full stack notes web application coming soon",
   },
   {
