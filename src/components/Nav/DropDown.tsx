@@ -25,14 +25,13 @@ export default function DropDown() {
   const listItems = [
     { item: "Projects", id: 1, link: "#projects" },
     { item: "Tech Stack", id: 2, link: "#tech-stack" },
-    { item: "About", id: 3, link: "#about" },
   ];
 
   return (
     <div className="md:hidden relative flex gap-6 flex-rowx items-center justify-between">
       <h1
         className={`${syne.className} text-left text-xl hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md text-primary tracking-widest`}>
-        <Link href="#home">MDT</Link>
+        <Link href="#home">MG</Link>
       </h1>
       {open ? (
         <AnimatePresence>

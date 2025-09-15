@@ -12,7 +12,7 @@ const syne = Syne({
 
 export default function Landing() {
   return (
-    <div className="max-w-screen flex flex-col lg:flex-row-reverse items-center px-8 py-20 h-screen ">
+    <div className="max-w-screen flex flex-col lg:flex-row-reverse items-center px-8 py-20 h-screen">
       <div className="absolute inset-0 w-full h-full ">
         <Image
           src={LosAngeles}

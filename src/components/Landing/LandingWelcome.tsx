@@ -15,7 +15,7 @@ export default function LandingWelcome() {
         <div className="mt-5 flex items-center flex-col md:flex-row">
           <Image className="rounded-full mr-5" src={Ghibli} width={300} height={100} alt="Avatar" />
           <div>
-          <div className="mb-5">
+          <div className="my-5">
             <h1 className="text-3xl leading-10 mb-2 font-bold max-md:text-xl max-md:leading-7">
               Building Intelligent Software for the AI Era
             </h1>
