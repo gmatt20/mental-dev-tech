@@ -148,7 +148,7 @@ export const TechData : Tech[] = [
   {
     component: SiPrettier,
     name: "Prettier",
-    color: "#F7B93E",
+    color: "#FFFFFF",
     stack: "tools",
   },
   {
@@ -178,7 +178,7 @@ export const TechData : Tech[] = [
   {
     component: SiOpenai,
     name: "OpenAI",
-    color: "#412991",
+    color: "#FFFFFF",
     stack: "ai",
   },
   {

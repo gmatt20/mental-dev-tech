@@ -26,12 +26,12 @@ export default function TechStack() {
             key={stackName}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, transition: { duration: 1 } }}
-            className="my-10 w-[80%] max-md:w-full mx-auto"
+            className="my-10 md:w-[60%] max-md:w-full mx-auto"
           >
             <div className="bg-darker p-8 rounded-lg flex flex-col">
               <TrafficLights />
               <h2
-                className={`${syne.className} text-3xl text-pretty mb-5 text-center`}
+                className={`${syne.className} text-3xl text-pretty my-5 text-center`}
               >
                 {stackName.toUpperCase()}
               </h2>
