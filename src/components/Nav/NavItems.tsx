@@ -16,7 +16,6 @@ interface List {
 const listItems: List[] = [
   { item: "Projects", id: 1, link: "#projects" },
   { item: "Tech Stack", id: 2, link: "#tech-stack" },
-  { item: "About", id: 3, link: "#about" },
 ];
 
 const NavItems: React.FC = () => {

@@ -10,7 +10,7 @@ const syne = Syne({
 
 export default function Footer() {
   return (
-    <div className="bg-darker max-md:flex-col flex justify-evenly items-center p-10">
+    <div className="bg-darker max-md:flex-col flex justify-evenly items-center p-5">
       <div className="max-md:mb-10">
         <h1
           className={`${syne.className} text-xl uppercase text-left max-md:text-center`}>
@@ -32,11 +32,6 @@ export default function Footer() {
           <Link href="#tech-stack">
             <li className="text-center hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md">
               TECH STACK
-            </li>
-          </Link>
-          <Link href="#about">
-            <li className="text-center hover:bg-dark p-2 hover:cursor-pointer hover:duration-150 hover:ease-in rounded-md">
-              ABOUT ME
             </li>
           </Link>
         </ul>
