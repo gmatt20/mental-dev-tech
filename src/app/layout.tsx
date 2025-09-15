@@ -7,7 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "Mental Dev Tech",
+  title: "Matthew | Full Stack LLM Developer",
 };
 
 const montserrat = Montserrat({
