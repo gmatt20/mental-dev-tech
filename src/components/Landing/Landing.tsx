@@ -28,14 +28,14 @@ export default function Landing() {
             cursor={false}
           />
           <TypeAnimation
-            sequence={[1500, "FRONTEND DEVELOPER"]}
+            sequence={[1500, "Full Stack LLM Developer"]}
             wrapper="span"
             className={`${syne.className} text-4xl max-md:text-xl text-primary text-center font-extrabold`}
             speed={60}
             cursor={false}
           />
           <TypeAnimation
-            sequence={[2500, "Los Angeles, California"]}
+            sequence={[2500, "Anaheim, California"]}
             wrapper="span"
             className={`${syne.className} text-2xl max-md:text-lg text-white text-center`}
             speed={40}
