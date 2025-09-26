@@ -1,4 +1,6 @@
 import { StaticImageData } from "next/image";
+import bravo from "@/public/bravo.jpg"
+import lexicon from "@/public/lexicon.webp"
 import tkd from "@/public/tkd.webp";
 import acm from "@/public/acm.webp";
 import aisc from "@/public/aisc.webp";
@@ -11,6 +13,18 @@ interface Project {
 }
 
 export const ProjectData: Project[] = [
+  {
+    url: bravo,
+    link: "https://github.com/gmatt20/bravo-public",
+    title: "AI-Powered Schedule Optimization Web App",
+    alt: "Picture of the AI-Powered Schedule Optimization Web App"
+  },
+  {
+    url: lexicon,
+    link: "https://github.com/gmatt20/lexicon",
+    title: "Lexicon - LLM Personality",
+    alt: "Picture of Lexicon"
+  },
   {
     url: tkd,
     link: "https://tkd.ucrhighlanders.org/",
