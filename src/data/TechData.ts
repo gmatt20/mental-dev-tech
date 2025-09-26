@@ -166,7 +166,7 @@ export const TechData : Tech[] = [
   {
     component: SiHuggingface,
     name: "Hugging Face",
-    color: "#FF9900",
+    color: "#FFD21E",
     stack: "ai",
   },
   {
@@ -184,7 +184,7 @@ export const TechData : Tech[] = [
   {
     component: SiDrizzle,
     name: "Drizzle ORM",
-    color: "#0091FF",
+    color: "#CFFF04",
     stack: "database",
   },
   {
