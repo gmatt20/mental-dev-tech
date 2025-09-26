@@ -6,6 +6,8 @@ import origMDT from "@/public/origMDT.webp";
 import psycWeb from "@/public/psycWeb.webp";
 import rpool from "@/public/rpool.webp";
 import tkd from "@/public/tkd.webp";
+import acm from "@/public/acm.webp";
+import aisc from "@/public/aisc.webp";
 
 interface Project {
   url: StaticImageData;
@@ -26,6 +28,18 @@ export const ProjectData: Project[] = [
     link: "https://tkd.ucrhighlanders.org/",
     title: "TKD @ UCR Website",
     alt: "Picture of The Taekwondo @ UCR Website",
+  },
+  {
+    url: acm,
+    link: "https://acm.cs.ucr.edu/",
+    title: "ACM @ UCR",
+    alt: "Picture of the ACM @ UCR Website"
+  },
+  {
+    url: aisc,
+    link: "https://aisc.ucrhighlanders.org/",
+    title: "AI Student Collective @ UCR",
+    alt: "Picture of the AI Student Collective @ UCR Website"
   },
   {
     url: notes,
