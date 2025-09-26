@@ -21,21 +21,22 @@ export default function Projects() {
           className={`${syne.className} text-center text-5xl max-md:text-3xl my-20`}>
           PROJECTS
         </h1>
-        <div className="grid grid-cols-2 grid-flow-row gap-10 w-[100%] max-md:grid-cols-1">
+        <div className="grid grid-cols-1 grid-flow-row gap-10 w-[100%] md:grid-cols-2">
           {ProjectData.map((project, id: number) => (
             <div
               key={id}
               className="flex flex-col gap-10 items-center justify-center">
-              <div className="bg-darker rounded-lg p-10 max-md:p-6 w-[80%]max-md:w-full text-center h-[100%]">
+              <div className="bg-darker rounded-lg p-10 max-md:p-6 w-[100%]  text-center h-full">
                 <Link
                   href={project.link}
                   rel="noopener noreferrer"
-                  target="_blank">
+                  target="_blank"
+                  >
                   <div>
                     <Image
                       src={project.url}
                       alt={project.alt}
-                      className="rounded-lg max-w-[100%] mb-5"
+                      className="rounded-lg w-[100%] object-cover md:h-[20rem] mb-5"
                     />
                   </div>
                   <div>
