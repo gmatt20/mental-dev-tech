@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import bravo from "@/public/bravo.jpg"
+import bravo from "@/public/bravo.webp"
 import lexicon from "@/public/lexicon.webp"
 import tkd from "@/public/tkd.webp";
 import acm from "@/public/acm.webp";
